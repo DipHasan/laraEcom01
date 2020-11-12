@@ -26,6 +26,8 @@ class AdminPagesController extends Controller
         $product->title = $request->title;
         $product->description = $request->description;
         $product->price = $request->price;
+        $product->price = $request->price;
+
         $product->quantity= $request->quantity;
 
         $product->slug = Str::slug($request->title);
