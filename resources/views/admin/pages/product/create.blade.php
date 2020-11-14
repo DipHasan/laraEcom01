@@ -11,6 +11,7 @@
                 <div class="card-body">
                 <form action="{{ route('admin.product.store')}}" method="POST" enctype="multipart/form-data">
                     {{csrf_field()}}
+                    @include('admin.partials.messages')
                     <div class="form-group">
                         <label for="exampleInputEmail1">Title</label>
                         <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
