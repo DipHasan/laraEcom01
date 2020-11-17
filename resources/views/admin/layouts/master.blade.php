@@ -158,7 +158,7 @@
                 <img class="img-xs rounded-circle" src="{{asset('images/faces/face8.jpg')}}"alt="Profile image"> </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
-                  <img class="img-md rounded-circle" src="{{asset('images/faces/face8.jpg')}}" alt="Profile image">
+                  <img class="img-md rounded-circle" src="{{asset('/images/faces/face8.jpg')}}" alt="Profile image">
                   <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                   <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p>
                 </div>
@@ -246,9 +246,18 @@
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <i class="menu-icon typcn typcn-document-add"></i>
-                <span class="menu-title">User Pages</span>
+                <span class="menu-title">Manage Products</span>
                 <i class="menu-arrow"></i>
               </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{route('admin.products')}}"> Products </a>
+                  </li>
+                </ul>
+              </div>
+
+
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">

@@ -21,7 +21,7 @@
                         @foreach ($products as $product)
 
 
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                          <div class="card" >
 
                          @php $i = 1; @endphp

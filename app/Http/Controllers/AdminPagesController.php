@@ -23,6 +23,17 @@ class AdminPagesController extends Controller
         return view('admin.pages.product.create');
     }
 
+    public function product_edit($id)
+    {
+        $product = Product::find($id);
+        return view('admin.pages.product.edit')->with('product', $product);
+    }
+    public function manage_products()
+    {
+        $products = Product::orderBy('id', 'desc')->get();
+        return view('admin.pages.product.index')->with('products', $products);
+    }
+
     public function store(Request $request)
     {
         $request->validate([
